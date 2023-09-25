@@ -1,0 +1,87 @@
+/* Selectores de tipo */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(135, 54, 81, 0.2); 
+}
+
+header {
+    display: flex;
+    min-height: 70px;
+    background-color: #391335;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    nav a {
+        font-weight: 600;
+        padding-right: 10px;
+        color: white;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        color: orange;
+    }
+
+    @media (max-width: 700px) {
+        header {
+            flex-direction: column;
+        }
+
+        nav {
+            padding: 10px 0px;
+        }
+    }
+}
+
+img {
+    max-width: 40%;
+    height: auto;
+    margin: 1rem;
+}
+
+footer {
+    text-align: center;
+    background-color: #391335;
+    color: white;
+    padding: 1rem;
+}
+
+.imagen-container {
+    text-align: center;
+}
+
+/* Selectores de clase */
+.cita {
+    font-style: italic;
+    color: #a45b37;
+    margin: 1rem; 
+}
+
+/* Selectores de Id */
+#contenido {
+    background-color: white;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+}
