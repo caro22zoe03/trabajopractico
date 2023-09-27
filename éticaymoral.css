@@ -2,9 +2,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: rgba(135, 54, 81, 0.2); 
-}
-
-header {
+  }
+  
+  header {
     background-color: #520b68;
     color: #520b68;
     text-align: center;
@@ -18,14 +18,14 @@ header {
         display: flex;
         align-items: center;
     }
-
+  
     .logo img {
         height: 50px;
         margin-right: 10px;
     }
-
-
-
+  
+  
+  
     nav {
         background-color: #f2ddf9;
         padding: 0.5rem;
@@ -54,50 +54,47 @@ header {
       main {
         padding: 2rem;
       }
-    
-
-
 
     
-
-img {
+  
+  img {
     max-width: 40%;
     height: auto;
     margin: 1rem;
-}
-
-footer {
+  }
+  
+  footer {
     text-align: center;
     background-color: #391335;
     color: white;
     padding: 1rem;
-}
-
-.imagen-container {
-    text-align: center;
-}
-
-/* Selectores de clase */
-.cita {
+  }
+  
+  .imagen-container {
+    align-self: center;
+  }
+  
+  /* Selectores de clase */
+  .cita {
     font-style: italic;
     color: #a45b37;
     margin: 1rem; 
-}
-
-/* Selectores de Id */
-#contenido {
+  }
+  
+  /* Selectores de Id */
+  #contenido {
     background-color: white;
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
-}
-
-a {
+  }
+  
+  a {
     color: white;
     font-size: 20px;
     text-decoration: none;
-}
-
-a:hover {
+  }
+  
+  a:hover {
     color: orange;
-}
+  }
