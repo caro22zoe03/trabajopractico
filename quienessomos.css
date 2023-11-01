@@ -2,11 +2,12 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: rgba(135, 54, 81, 0.2); 
+
 }
 
 header {
   background-color: #520b68;
-  color: #520b68;
+  color: white;
   text-align: center;
   padding: 1rem;
 }
@@ -84,7 +85,6 @@ footer {
   margin: 1rem; 
 }
 
-/* Selectores de Id */
 #contenido {
   background-color: white;
   padding: 2rem;
@@ -101,6 +101,6 @@ a {
 a:hover {
   color: orange;
 }
-.drive{
-  text-align: center;
-}
+
+
+

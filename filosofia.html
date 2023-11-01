@@ -2,16 +2,23 @@
 <head>
   <title>Quienes somos</title>
   <link rel="stylesheet" href="filosofia.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 <body>
+
     <header> 
+      <a href="#" class="logo">
+        <img src="logo.png" alt="logo">
+        <h2 class="nombre-empresa">Re-aprender a pensar</h2>
+        <p>Reflexiónes sobre filosofía, ética y moral cristiana</p>
+      </a>
+    </header>
 
         <nav>
-            <a href="index.html" class="nav-link">Inicio</a>
-            <a href="quienessomos.html" class="nav-link">Quiénes somos</a>
-            <a href="filosofia.html" class="nav-link">Filosofía</a>
-            <a href="éticaymoral.html" class="nav-link">Ética y moral</a>
-          </nav>
-        </header>
+          <a href="index.html" class="nav-link">Inicio</a>
+          <a href="quienessomos.html" class="nav-link">Quiénes somos</a>
+          <a href="filosofia.html" class="nav-link">Filosofía</a>
+          <a href="éticaymoral.html" class="nav-link">Ética y moral</a>
+        </nav>
 
           <div id="contenido">
         <h1>Filosofía</h1> 
@@ -26,12 +33,35 @@
         <p>-La pregunta por Dios: preguntar por Dios es preguntar por la creación del universo, preguntar por su existencia y su sentido. ¿Existe el mundo desde siempre? ¿Cómo fue creado? ¿Hay una potencia absoluta por fuera del mundo? ¿O esa potencia está con nosotros y habita el mundo?</p>
         
         <h2>Algunos autores</h2>
-        <p>Clikeá para ahondar sobre el pensamiento filosófico y ético de algunos personajes importantes en la historia :)</p>
+        <p>Clikeá para ahondar sobre el pensamiento filosófico y ético de algunos personajes importantes en la historia :) </p>
         <ul>
             <li><a href="https://youtu.be/K0Dn-_ZhmyM?si=zZvhC1-r0idHKHoU" target="_blank">Aristóteles</a></li>
             <li><a href="https://youtu.be/uLaqau9pfv4?si=os2KVwIbTgAqstn2" target="_blank">Platón</a></li>
-            <li><a href="https://www.youtube.com/watch?v=iTiPc1cv9OA&ab_channel=UnboxingPhilosophy" target="_blank">Tomás de Aquino</a></li>
-          </ul>
-          </div>
+            <li><a href="https://www.youtube.com/watch?v=iTiPc1cv9OA&ab_channel=UnboxingPhilosophy" target="_blank">Tomás de Aquino</a></li> 
+         </ul>
+            <p>La obra de este último autor  debería tratarse de la base de cualquier filosofía cristiana. Por ello mismo cada año se realiza la <a href="http://www.sta.org.ar/cms/" target="_blank">Semana Tomista</a>, en la que participan profesores e investigadores, socios de aquélla, amigos, graduados, jóvenes estudiantes y pensadores. Este año, la temática se insertó en el Triple Jubileo y se realizó presencialmente los días 11,12,14 y 15. </p>
+            <h3>¿Cuántos días faltan para terminar el próximo encuentro tomista?</h3>
+
+            <button onclick="cuantoFalta()"><i class="bi bi-calendar-heart"></i></button>
+            <p id="cuantoFalta"></p>
+      
+            <script>
+                function cuantoFalta() {
+                    document.getElementById("cuantoFalta").textContent="Faltan " + calcularDias + " días para la Sociedad Tomista!"
+                   
+                }
+            var fechaActual = new Date (2023,10,1);
+            var fechaFinal = new Date (2024,9,1);
+            var diferencia = fechaFinal-fechaActual;
+            var calcularDias = Math.ceil(diferencia / (1000 * 60 * 60 * 24));
+                </script>
+
+            <p> Como todos los años, esta semana tan especial se realiza aproximadamente durante la primera quincena de Septiembre. La temática de 2023 se insertó en el Triple Jubileo que se inició este mismo año  el 18 de julio, donde se han cumplido exactamente 700 años de la canonización. Sigue el año próximo con el cumplimiento de los 750 años de su muerte y finaliza el 2025 con los 800 años de su nacimiento.</p>
+        <div>
+        <a href="#" class="tomista.jpeg">
+          <img src="tomista.jpeg" alt="SemanaTomista">
+        </a>
+        </div>
 
 </body>
+</html>
